@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/TitleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/ic_shadow"
+            android:scaleType="centerCrop"
+            android:src="@drawable/event1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.thebrownarrow.customfont.CustomFontTextView
+                    android:id="@+id/TextViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GRAND REX NIGHT CLUB"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    app:custom_typeface="@string/font_regular" />
+
+                <com.thebrownarrow.customfont.CustomFontTextView
+                    android:id="@+id/TextViewLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Centre Stage Mall, New York"
+                    android:textColor="#FFF"
+                    android:textSize="15sp"
+                    app:custom_typeface="@string/font_titanium_bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rating" />
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:id="@+id/TextViewRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textColor="#FFF"
+                        android:textSize="14sp"
+                        app:custom_typeface="@string/font_titanium_bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="5dp"
+                        android:src="@drawable/like" />
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:id="@+id/TextViewLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:textColor="#FFF"
+                        android:textSize="14sp"
+                        app:custom_typeface="@string/font_titanium_bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="5dp"
+                        android:src="@drawable/location" />
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:id="@+id/TextViewDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.5 KM"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="14sp"
+                        app:custom_typeface="@string/font_titanium_bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

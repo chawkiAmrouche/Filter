@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sekizbit_switch_stroke"
+        android:orientation="vertical"
+
+        tools:context="com.chawki.bookeventclub.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ImageViewDrawerToggle1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_drawer" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="HOME"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        app:custom_typeface="@string/font_regular" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ImageViewSetting"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:src="@drawable/ic_setting" />
+
+                    <ImageView
+                        android:id="@+id/ImageViewSearch"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:src="@drawable/ic_search" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sekizbit_switch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.thebrownarrow.customfont.CustomFontButton
+                    android:id="@+id/sekizbit_switch_btn_left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_marginLeft="80dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/sekizbit_selector_btn_left"
+                    android:text="EVENTS"
+                    android:textColor="@drawable/sekizbit_selector_btn_text_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <!--app:custom_typeface="@string/font_regular" />-->
+
+                <com.thebrownarrow.customfont.CustomFontButton
+                    android:id="@+id/sekizbit_switch_btn_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="80dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/sekizbit_selector_btn_right"
+                    android:text="CLUBS"
+                    android:textColor="@drawable/sekizbit_selector_btn_text_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <!--app:custom_typeface="@string/font_regular" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sekizbit_switch_stroke"
+            android:orientation="vertical"
+            android:elevation="5dp"
+            android:id="@+id/awesome_card"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/cancel_action"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="14dp"
+                        android:src="@drawable/cancel" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Filter"
+                        android:textColor="#FFF"
+                        android:textSize="26sp"
+                        app:custom_typeface="@string/font_titanium_bold"
+                        app:textAllCaps="true" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginRight="16dp"
+                        android:text="Reset"
+
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        app:custom_typeface="@string/font_titanium_bold"
+                        app:textAllCaps="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:weightSum="1">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+
+
+                        android:text="price range"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="15sp"
+                        app:custom_typeface="@string/font_titanium"
+                        app:textAllCaps="true" />
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:id="@+id/pricetext"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+
+
+                        android:layout_alignParentTop="true"
+                        android:text="250-785$"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:custom_typeface="@string/font_titanium_bold"
+                        app:textAllCaps="true" />
+
+                </RelativeLayout>
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:dsb_indicatorColor="@color/colorPrimary"
+                    app:dsb_max="1000"
+
+                    app:dsb_min="50"
+                    app:dsb_progressColor="#fff"
+                    app:dsb_rippleColor="#fff"
+
+                    app:dsb_thumbSize="15dp"
+                    android:id="@+id/pricebar"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+
+
+                        android:text="distance"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="15sp"
+                        app:custom_typeface="@string/font_titanium"
+                        app:textAllCaps="true" />
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:id="@+id/distancetext"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+
+
+                        android:layout_alignParentTop="true"
+                        android:text="0-7km"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:custom_typeface="@string/font_titanium_bold"
+                        app:textAllCaps="true" />
+
+                </RelativeLayout>
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:dsb_indicatorColor="@color/colorPrimary"
+                    app:dsb_max="25"
+                    app:dsb_min="0"
+                    app:dsb_progressColor="#fff"
+                    app:dsb_rippleColor="#fff"
+                    app:dsb_thumbSize="15dp"
+                    android:id="@+id/distancebar"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+
+
+                        android:layout_alignParentTop="true"
+                        android:text="Date"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="15sp"
+                        app:custom_typeface="@string/font_titanium"
+                        app:textAllCaps="true" />
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="90dp"
+                        android:text="Time"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:custom_typeface="@string/font_titanium"
+                        app:textAllCaps="true" />
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_below="@+id/date"
+                        android:layout_marginTop="20dp"
+                        android:text="14 Nov - 16 Nov"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        app:custom_typeface="@string/font_titanium_bold"
+                        app:textAllCaps="true" />
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_alignStart="@+id/time"
+                        android:layout_below="@+id/time"
+                        android:layout_marginTop="20dp"
+                        android:text="06 - 10 PM"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+
+                        android:textStyle="bold"
+                        app:custom_typeface="@string/font_titanium_bold"
+                        app:textAllCaps="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp">
+
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+
+
+                        android:text="rating"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="15sp"
+                        app:custom_typeface="@string/font_titanium"
+                        app:textAllCaps="true" />
+
+
+                </RelativeLayout>
+
+
+                <RatingBar
+                    android:id="@+id/framework_decimal_ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#fff"
+
+                    android:isIndicator="false"
+                    android:maxHeight="48dp"
+                    android:minHeight="48dp"
+                    android:stepSize="0.01"
+                    android:rating="2.5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </io.codetail.widget.RevealFrameLayout>
+
+</RelativeLayout>

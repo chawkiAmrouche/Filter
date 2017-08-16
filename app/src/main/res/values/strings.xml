@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Filter</string>
+
+    <string name="font_regular">fonts/Prezident.ttf</string>
+    <string name="font_titanium_bold">fonts/TitilliumText22L005.otf</string>
+    <string name="font_titanium">fonts/TitilliumText22L004.otf</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
